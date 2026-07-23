@@ -1,0 +1,96 @@
+aid: citibank-canada
+name: Citibank Canada
+review:
+  question: Does Citibank Canada expose a first-party public developer API or downloadable OpenAPI, or is access group-level / institutional-only?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Citibank Canada (Citi Canada) publishes no Canada-specific developer portal
+    and no first-party public API. The Canadian subdomains do not resolve:
+    developer.citibank.ca and www.citibank.ca both fail DNS/TLS. As a
+    Schedule II foreign bank subsidiary of Citigroup that operates institutional
+    and corporate banking only (having exited Canadian consumer retail), Citi
+    Canada's clients integrate through Citigroup's GROUP-LEVEL platforms — the
+    Citi Developer Experience (developer.citi.com, HTTP 200) and the CitiConnect
+    API Portal from Treasury and Trade Solutions — which document institutional
+    APIs for payments, statements/reporting, balance inquiry, beneficiary data
+    and FX. Those docs and the sandbox / API Explorer sit behind client
+    onboarding; no OpenAPI or Swagger definition is publicly downloadable, so
+    none was harvested. This is the group institutional portal, not a Citi
+    Canada first-party public API.
+  charter: Schedule II (foreign bank subsidiary) under Canada's Bank Act; CDIC and Canadian Bankers Association member; owned by Citigroup Inc.
+  firstPartyDeveloperPortal: false
+  groupDeveloperPortal:
+    url: https://developer.citi.com/
+    httpStatus: 200
+    note: Citigroup group-level "Citi Developer Experience" institutional API portal; JS-rendered SPA, full docs and sandbox gated behind client onboarding.
+  downloadableSpecs: false
+  specProvenance: none
+  authModel: Not publicly documented; Citi institutional / CitiConnect integrations are enterprise onboarding based (typically OAuth2 client credentials plus mTLS and message-level signing), but no public auth documentation was reachable without onboarding.
+  fdxParticipant: false
+  posture1033: not-applicable
+  consumerDrivenBanking: |
+    Canada has no operational open-banking mandate. The federal Consumer-Driven
+    Banking framework (Budget 2024 / Fall Economic Statement 2024, overseen by
+    the Financial Consumer Agency of Canada) is legislated but not yet live.
+    Citi Canada publishes no stated CDB position and holds no retail consumer
+    accounts here, so a consumer data-access API is neither documented nor
+    applicable.
+  interacRtrPosture: |
+    No Citi Canada API documenting Interac (e-Transfer / consumer data-sharing)
+    or Payments Canada Real-Time Rail (RTR) / Lynx participation was found in
+    public materials. As an institutional bank, Canadian domestic and
+    cross-border payments are handled through CitiConnect rather than a public
+    first-party rail API.
+  aggregatorAccess: |
+    Not applicable — Citi Canada offers no consumer/retail deposit accounts, so
+    Flinks / Plaid / MX / Salt Edge style consumer data aggregation does not
+    apply to this entity.
+  probes:
+  - url: https://developer.citibank.ca
+    result: DNS does not resolve (getaddrinfo ENOTFOUND)
+  - url: https://www.citibank.ca
+    result: Does not resolve / TLS certificate mismatch (Akamai); no active Canadian site
+  - url: https://developer.citi.com/
+    httpStatus: 200
+    note: Citi Developer Experience — group institutional API portal (SPA)
+  - url: https://developer.citi.com/apis/
+    httpStatus: 200
+    note: Explore Citi Institutional APIs landing (SPA)
+  - url: https://www.citigroup.com/global/insights/citiconnect-api-portal
+    httpStatus: 200
+    note: CitiConnect API Portal insight page (TTS); references complete API documentation and a sandbox environment
+  - url: https://www.citigroup.com/citi/about/countries-and-jurisdictions/canada.html
+    httpStatus: 200
+    note: Citi Canada country/jurisdiction page
+  transports:
+  - protocol: REST
+    scheme: https
+    documented: true
+    note: Citi institutional / CitiConnect APIs are HTTPS REST, documented on the group developer portal behind onboarding.
+  - protocol: WebSocket
+    scheme: wss
+    documented: false
+sources:
+- url: https://developer.citi.com/apis/
+  type: DeveloperPortal
+  note: Citigroup group-level institutional developer portal (not Canada-specific).
+- url: https://www.citigroup.com/global/insights/citiconnect-api-portal
+  type: Documentation
+  note: CitiConnect API Portal overview (Treasury and Trade Solutions).
+- url: https://www.citigroup.com/citi/about/countries-and-jurisdictions/canada.html
+  type: Website
+  note: Citi Canada business lines and jurisdiction detail.
+- url: https://en.wikipedia.org/wiki/Citibank_Canada
+  type: Reference
+  note: Charter type (Schedule II), history, CDIC membership, consumer-banking exit.
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Recorded one honest API surface — the Citigroup group-level Citi
+    Institutional (CitiConnect) API platform that serves Citi Canada's
+    institutional clients — with confirmed live humanURL, and documented that
+    there is no Canada-specific first-party public API, no downloadable spec,
+    no FDX/1033 posture, and no applicable consumer aggregator access.

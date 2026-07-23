@@ -1,0 +1,70 @@
+aid: citibank-canada
+url: https://raw.githubusercontent.com/api-evangelist/citibank-canada/refs/heads/main/apis.yml
+name: Citibank Canada
+kind: company
+description: >-
+  Citibank Canada (Citi Canada) is the Canadian arm of Citigroup, chartered
+  under Canada's Bank Act as a Schedule II (foreign bank subsidiary) deposit-taking
+  institution, established in 1919 in Toronto and headquartered at Citigroup Place,
+  123 Front Street West. It is a member of the Canadian Bankers Association and the
+  Canada Deposit Insurance Corporation (CDIC). Citi Canada is an institutional and
+  corporate bank only — securities trading, cash management, treasury, trade finance,
+  custody, clearing, securities financing and private banking — having exited Canadian
+  consumer retail banking years ago (its MasterCard portfolio was sold to CIBC in 2010
+  and CitiFinancial Canada, now Fairstone, was divested in 2017). It runs no
+  Canada-specific developer portal; its corporate and institutional clients integrate
+  through Citigroup's group-level Citi Developer Experience and CitiConnect API
+  platform for payments, statements/reporting, balance inquiry and FX. Canada has no
+  operational open-banking mandate — the federal Consumer-Driven Banking framework
+  (Budget 2024 / FES 2024, overseen by the FCAC) is legislated but not yet live — and
+  because Citi Canada holds no retail consumer accounts here, consumer data-aggregation
+  access is not applicable to this entity.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Canada
+- Schedule II Bank
+- Institutional Banking
+- Treasury and Trade
+- Corporate Banking
+- Payments
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis:
+- aid: citibank-canada:citi-institutional-citiconnect-api
+  name: Citi Institutional (CitiConnect) API Platform
+  description: >-
+    Citigroup's group-level institutional API platform (Citi Developer Experience /
+    CitiConnect, from Treasury and Trade Solutions) that Citi Canada's corporate and
+    institutional clients integrate with for payments, statements and reporting,
+    balance inquiry, beneficiary/payee data and FX. Documentation and the sandbox /
+    API Explorer sit behind client onboarding; there is no Canada-specific developer
+    portal and no publicly downloadable OpenAPI/Swagger definition. Listed as the
+    honest API surface serving this Schedule II entity's clients, not a Citi Canada
+    first-party public API.
+  humanURL: https://developer.citi.com/apis/
+  properties:
+  - type: DeveloperPortal
+    url: https://developer.citi.com/
+  - type: Documentation
+    url: https://developer.citi.com/apis/
+  - type: Documentation
+    url: https://www.citigroup.com/global/insights/citiconnect-api-portal
+common:
+- type: Website
+  url: https://www.citigroup.com/citi/about/countries-and-jurisdictions/canada.html
+- type: DeveloperPortal
+  url: https://developer.citi.com/
+- type: Documentation
+  url: https://developer.citi.com/apis/
+- type: GitHubOrganization
+  url: https://github.com/Citi
+- type: LinkedIn
+  url: https://www.linkedin.com/company/citi
+- type: PrivacyPolicy
+  url: https://www.citigroup.com/global/privacy
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
