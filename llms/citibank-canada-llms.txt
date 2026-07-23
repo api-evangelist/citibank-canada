@@ -1,0 +1,26 @@
+# Citibank Canada
+
+> Citibank Canada (Citi Canada) is the Canadian arm of Citigroup, chartered under Canada's Bank Act as a Schedule II (foreign bank subsidiary) deposit-taking institution, headquartered at Citigroup Place, 123 Front Street West, Toronto. It is an institutional and corporate bank only — securities trading, cash management, treasury, trade finance, custody, clearing, securities financing and private banking — having exited Canadian consumer retail banking (its MasterCard portfolio was sold to CIBC in 2010 and CitiFinancial Canada, now Fairstone, was divested in 2017). It is a member of the Canadian Bankers Association and the Canada Deposit Insurance Corporation (CDIC).
+
+## Notes
+
+- Citi Canada runs no Canada-specific developer portal and publishes no first-party public API or downloadable OpenAPI/Swagger definition.
+- The Canadian subdomains developer.citibank.ca and www.citibank.ca do not resolve (DNS/TLS failure).
+- Corporate and institutional clients integrate through Citigroup's GROUP-LEVEL platforms — the Citi Developer Experience and the CitiConnect API platform (Treasury and Trade Solutions) — for payments, statements/reporting, balance inquiry, beneficiary/payee data and FX. Documentation and the sandbox / API Explorer sit behind client onboarding.
+- Canada has no operational open-banking mandate. The federal Consumer-Driven Banking framework (Budget 2024 / FES 2024, overseen by the FCAC) is legislated but not yet live. Citi Canada holds no retail consumer accounts here, so consumer data-aggregation access is not applicable.
+
+## APIs
+
+- [Citi Institutional (CitiConnect) API Platform](https://developer.citi.com/apis/): Citigroup's group-level institutional API platform that Citi Canada's corporate and institutional clients integrate with for payments, statements and reporting, balance inquiry, beneficiary/payee data and FX. Documentation and sandbox sit behind client onboarding; no publicly downloadable spec.
+
+## Developer
+
+- [Citi Developer Experience Portal](https://developer.citi.com/): Citigroup group-level institutional developer portal (not Canada-specific).
+- [Explore Citi Institutional APIs](https://developer.citi.com/apis/): Institutional API landing (SPA, gated).
+- [CitiConnect API Portal](https://www.citigroup.com/global/insights/citiconnect-api-portal): Treasury and Trade Solutions API portal overview.
+
+## Corporate
+
+- [Citi Canada country/jurisdiction page](https://www.citigroup.com/citi/about/countries-and-jurisdictions/canada.html): Citi Canada business lines and jurisdiction detail.
+- [Citigroup Privacy](https://www.citigroup.com/global/privacy): Group privacy policy.
+- [Citi on GitHub](https://github.com/Citi): Citigroup GitHub organization.

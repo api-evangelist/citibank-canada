@@ -53,6 +53,8 @@ apis:
   - type: Documentation
     url: https://www.citigroup.com/global/insights/citiconnect-api-portal
 common:
+- type: DomainSecurity
+  url: security/citibank-canada-domain-security.yml
 - type: Website
   url: https://www.citigroup.com/citi/about/countries-and-jurisdictions/canada.html
 - type: DeveloperPortal
@@ -65,6 +67,8 @@ common:
   url: https://www.linkedin.com/company/citi
 - type: PrivacyPolicy
   url: https://www.citigroup.com/global/privacy
+- type: LLMsTxt
+  url: llms/citibank-canada-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
