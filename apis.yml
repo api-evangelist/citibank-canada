@@ -21,6 +21,15 @@ description: >-
   access is not applicable to this entity.
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
+- Financial-Services
+- Banking
+- Canada
+- Schedule II Bank
+- Institutional Banking
+- Treasury and Trade
+- Corporate Banking
+- Payments
+tags_raw:
 - Financial Services
 - Banking
 - Canada
