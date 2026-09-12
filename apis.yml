@@ -104,3 +104,5 @@ common:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-parent: citigroup
+x-relationship: product
