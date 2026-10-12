@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/citibank-canada/integrations
+- https://n8n.io/integrations/citibank-canada/
+- https://composio.dev/toolkits/citibank-canada
+- https://monid.ai/tools/citibank-canada
+checked:
+- https://composio.dev/toolkits/citibank-canada
+- https://monid.ai/tools/citibank-canada
+- https://n8n.io/integrations/citibank-canada/
+- https://zapier.com/apps/citibank-canada/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
