@@ -1,4 +1,4 @@
-# Citibank Canada (citibank-canada)
+# Citibank Canada
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,56 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Citibank Canada (Citi Canada) is the Canadian arm of Citigroup, chartered under Canada's Bank Act as a Schedule II (foreign bank subsidiary) deposit-taking institution. Established in 1919 in Toronto and headquartered at Citigroup Place, 123 Front Street West, it is a member of the Canadian Bankers Association and the Canada Deposit Insurance Corporation (CDIC). Citi Canada is an institutional and corporate bank only — securities trading, cash management, treasury, trade finance, custody, clearing, securities financing and private banking — having exited Canadian consumer retail banking (its MasterCard portfolio was sold to CIBC in 2010, and CitiFinancial Canada / Fairstone was divested in 2017).
+Citibank Canada (Citi Canada) is the Canadian arm of Citigroup, chartered under Canada's Bank Act as a Schedule II (foreign bank subsidiary) deposit-taking institution, established in 1919 in Toronto and headquartered at Citigroup Place, 123 Front Street West. It is a member of the Canadian Bankers Association and the Canada Deposit Insurance Corporation (CDIC). Citi Canada is an institutional and corporate bank only — securities trading, cash management, treasury, trade finance, custody, clearing, securities financing and private banking — having exited Canadian consumer retail banking years ago (its MasterCard portfolio was sold to CIBC in 2010 and CitiFinancial Canada, now Fairstone, was divested in 2017). It runs no Canada-specific developer portal; its corporate and institutional clients integrate through Citigroup's group-level Citi Developer Experience and CitiConnect API platform for payments, statements/reporting, balance inquiry and FX. Canada has no operational open-banking mandate — the federal Consumer-Driven Banking framework (Budget 2024 / FES 2024, overseen by the FCAC) is legislated but not yet live — and because Citi Canada holds no retail consumer accounts here, consumer data-aggregation access is not applicable to this entity.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/citibank-canada/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/citibank-canada/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · Canada · Schedule II Bank · Institutional Banking · Treasury and Trade · Corporate Banking · Payments
 
-## Open-Finance & API Posture
+## Citibank Canada on APIs.io
 
-Citi Canada runs **no Canada-specific developer portal** — both `developer.citibank.ca` and `www.citibank.ca` fail to resolve. Its corporate and institutional clients integrate through Citigroup's **group-level** platforms: the Citi Developer Experience ([developer.citi.com](https://developer.citi.com/), HTTP 200) and the CitiConnect API Portal from Treasury and Trade Solutions, which document institutional APIs for payments, statements/reporting, balance inquiry, beneficiary data and FX. Those docs and the sandbox / API Explorer sit behind client onboarding, and no OpenAPI/Swagger definition is publicly downloadable.
+Everything profiled for Citibank Canada is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/citibank-canada/](https://apis.io/providers/citibank-canada/)** — or go straight to one of the APIs or properties below.
 
-Canada has **no operational open-banking mandate**: the federal Consumer-Driven Banking framework (Budget 2024 / Fall Economic Statement 2024, overseen by the Financial Consumer Agency of Canada) is legislated but not yet live. Citi Canada publishes no stated CDB position and, holding no retail consumer accounts, has no applicable consumer data-aggregation (Flinks / Plaid / MX / Salt Edge) or FDX/1033 posture.
+### APIs (1)
 
-## Tags
+- [Citi Institutional (CitiConnect) API Platform](https://apis.io/apis/citibank-canada/citi-institutional-citiconnect-api/) — Citigroup's group-level institutional API platform (Citi Developer Experience / CitiConnect, from Treasury and Trade Solutions) that Citi Canada's corporate…
 
-- Financial Services
-- Banking
-- Canada
-- Schedule II Bank
-- Institutional Banking
-- Treasury and Trade
-- Corporate Banking
-- Payments
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+#### Security (1)
 
-## APIs
+Authentication, trust centre, and vulnerability disclosure.
 
-### Citi Institutional (CitiConnect) API Platform
+- [Citibank Canada Domain Security](https://apis.io/security/citibank-canada/citibank-canada-domain-security/)
 
-Citigroup's group-level institutional API platform (Citi Developer Experience / CitiConnect, from Treasury and Trade Solutions) that Citi Canada's corporate and institutional clients integrate with for payments, statements and reporting, balance inquiry, beneficiary/payee data and FX. Documentation and the sandbox / API Explorer sit behind client onboarding; there is no Canada-specific developer portal and no publicly downloadable OpenAPI. This is the honest API surface serving this Schedule II entity's clients, not a Citi Canada first-party public API.
+## Where to find this API
 
-- **Human URL:** [https://developer.citi.com/apis/](https://developer.citi.com/apis/)
-
-#### Properties
-
-- [Developer Portal](https://developer.citi.com/)
-- [Documentation](https://developer.citi.com/apis/)
-- [CitiConnect API Portal](https://www.citigroup.com/global/insights/citiconnect-api-portal)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.citigroup.com/citi/about/countries-and-jurisdictions/canada.html)
-- [Developer Portal](https://developer.citi.com/)
 - [Documentation](https://developer.citi.com/apis/)
-- [GitHub Organization](https://github.com/Citi)
-- [LinkedIn](https://www.linkedin.com/company/citi)
-- [Privacy Policy](https://www.citigroup.com/global/privacy)
+- [Privacy policy](https://www.citigroup.com/global/privacy)
+- [GitHub](https://github.com/Citi)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 10.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 7.9** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/citibank-canada/](https://apis.io/providers/citibank-canada/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Citibank Canada: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/citibank-canada/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
